@@ -1,0 +1,81 @@
+.verify-container {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .verify-container h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .file-upload input[type="file"] {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hash-display {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .hash-value {
+    word-break: break-all;
+    color: #4fc3f7;
+  }
+  
+  .verify-button {
+    margin-top: 30px;
+    background-color: #00bcd4;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .verify-button:hover {
+    background-color: #0097a7;
+  }
+  
+  .verify-button:disabled {
+    background-color: #90a4ae;
+    cursor: not-allowed;
+  }
+  
+  .certificate {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    text-align: left;
+  }
+  
+  .certificate h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+  }
+  
+  .certificate-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #f1f1f1;
+  }
+  

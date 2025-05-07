@@ -1,0 +1,10 @@
+service : {
+  addAdmin: (principal) -> (bool);
+  addDocHash: (text, text, opt text) -> (bool);
+  getAdmin: () -> (vec principal) query;
+  getCanisterPrincipal: () -> (principal);
+  removeAdmin: (principal) -> (bool);
+  setAdmin: () -> (bool);
+  verifyDocument: (text) -> (text);
+  whoami: () -> (text) query;
+}

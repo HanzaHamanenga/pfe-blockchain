@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.dfx/
+*.env
+*.mp4
+*.png
+*.log
+*.tmp
+*.swp
+setupEnv.*
+deploy.sh
+
