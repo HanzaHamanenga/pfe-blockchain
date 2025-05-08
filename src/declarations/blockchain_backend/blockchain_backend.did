@@ -1,10 +1,34 @@
+type Result = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Metadata = 
+ record {
+   category: text;
+   fieldOfStudy: text;
+   fileName: text;
+   fileSize: nat;
+   fileType: text;
+   fileUrl: text;
+   ownerEmail: text;
+   ownerName: text;
+   universityName: text;
+   year: text;
+ };
+type Document = 
+ record {
+   contentHash: text;
+   createdAt: int;
+   createdBy: principal;
+   id: text;
+   ipfsCid: text;
+   metadata: Metadata;
+ };
 service : {
   addAdmin: (principal) -> (bool);
-  addDocHash: (text, text, opt text) -> (bool);
-  getAdmin: () -> (vec principal) query;
-  getCanisterPrincipal: () -> (principal);
-  removeAdmin: (principal) -> (bool);
-  setAdmin: () -> (bool);
-  verifyDocument: (text) -> (text);
-  whoami: () -> (text) query;
+  getAllDocuments: () -> (vec Document) query;
+  getDocument: (text) -> (opt Document) query;
+  registerDocument: (text, text, Metadata) -> (Result);
+  verifyDocument: (text) -> (vec Document) query;
 }

@@ -1,16 +1,12 @@
 {
   "canisters": {
-    "blockchain_backend": {
-      "main": "src/blockchain_backend/main.mo",
-      "type": "motoko"
-    },
-    "NFT": {
-      "main": "src/NFT/nft.mo",
+    "document_registry": {
+      "main": "src/blockchain_backend/document_registry.mo",
       "type": "motoko"
     },
     "blockchain_frontend": {
       "dependencies": [
-        "blockchain_backend"
+        "document_registry"
       ],
       "source": [
         "src/blockchain_frontend/dist"

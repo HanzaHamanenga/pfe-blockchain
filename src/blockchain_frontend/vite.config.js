@@ -18,12 +18,6 @@ export default defineConfig({
       },
     },
   },
-  define: {
-    'process.env.BLOCKCHAIN_BACKEND_CANISTER_ID': JSON.stringify(process.env.BLOCKCHAIN_BACKEND_CANISTER_ID),
-    'process.env.NFT_CANISTER_ID': JSON.stringify(process.env.NFT_CANISTER_ID),
-    'process.env.INTERNET_IDENTITY_CANISTER_ID': JSON.stringify(process.env.INTERNET_IDENTITY_CANISTER_ID),
-    'process.env.DFX_NETWORK': JSON.stringify(process.env.DFX_NETWORK)
-  },
   server: {
     proxy: {
       "/api": {
@@ -31,6 +25,9 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    watch : {
+      usePolling : true,
+    }
   },
   plugins: [
     react(),

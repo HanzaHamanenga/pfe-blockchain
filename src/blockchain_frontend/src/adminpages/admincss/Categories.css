@@ -1,0 +1,25 @@
+.categories h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .category-section {
+    margin-bottom: 30px;
+  }
+  
+  .category-section h3 {
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .category-section table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .category-section th {
+    background: #2980b9;
+  }

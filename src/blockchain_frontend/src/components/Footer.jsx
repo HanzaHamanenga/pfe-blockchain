@@ -1,51 +1,59 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Icon from './Icon.png';
 
 const Footer = () => {
   return (
-   <footer className="footer_pf">
-    <div className="container">
-        <div className="row">
-            <div className="service">
-                <h3 className="h3service">Services</h3>
-                <ul className="listservice">
-                    <li>Internet Computer</li>
-                    <li>Blockchain Tech</li>
-                    <li>Smart Contracts(Canisters)</li>
-                </ul>
+    <div>
+      <footer>
+        <div className='footer'>
+          <div className='company'>
+            <img src={Icon} alt="logo" />
+            <span>Documents Certification With Blockchain Technology</span>
+            <p>c/o Atlas Waves Solutions SARL
+              24 Rue des Palmiers, Hay Salam, 80000 Agadir, Morocco</p>
+            <h3>Follow Us</h3>
+            <div className='social-Icons'>
+              <a href="https://www.facebook.com/Elijah Ndyanga" target="_blank" rel="noopener noreferrer">
+                <FaFacebook />
+              </a>
+              <a href="https://www.instagram.com/Elijah Ndyanga" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="https://www.twitter.com/Elijah Ndyanga" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
+              </a>
+              <a href="https://www.youtube.com/Elijah Ndyanga" target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
+              </a>
             </div>
-            <div className="about">
-                <h3 className="h3about">About Us</h3>
-                <ul className="listservice">
-                    <li>Team</li>
-                    <li>Company</li>
-                </ul>
-            </div>
-            
-        </div>
-        <div className="ofer">
-                <h3 className="h3ofer">
-                    <img src="favicon.ico" alt="" />
-                    ICP Verification
-                </h3>
-                <p className="para">
-                We provide a secure and efficient platform for document verification powered by blockchain technology. Our solution allows users to upload, verify, and certify documents with instant NFT issuance, ensuring authenticity, reducing costs, and eliminating the need for third-party verification
-                </p>
-            </div>
-            
-            <div  data-aos="zoom-in" class="col item social">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i> </a>
-                <a href="#"><i class="fa-brands fa-github"> </i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"> </i> </a>
-           </div>
-        
-          <p class="copyright">VericationChain © 2025</p>
-        
-    </div>
+          </div>
+          <div className='tmenu'>
+            <h3>Company</h3>
+            <Link to="/">Home</Link>
+            <Link to="/features" >Features</Link>
+            <Link to="/about-us" >About Us</Link>
+            <Link to="/contact-us">Contact Us</Link>
 
-   </footer>
+          </div>
+          <div className='links'>
+            <h3>Quick Links</h3>
+            <Link to="/about-us" >Privacy Policy</Link>
+            <Link to="/contact-us">Terms of Use</Link>
+            <Link to="/about-us" >FAQs</Link>
+
+
+          </div>
+          <hr />
+          <div className='copy-right'>
+            <p>{new Date().getFullYear()} CopyRight {'\u00A9'} .Documents Certification With Blockchain Technology </p>
+
+          </div>
+        </div>
+      </footer>
+    </div>
   )
 }
 
-export default Footer
+export default Footer;

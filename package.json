@@ -6,8 +6,7 @@
   "name": "blockchain",
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "prebuild": "dfx generate && node setupEnv.cjs && npm run prebuild --workspaces --if-present",
-    "prestart": "dfx generate && node setupEnv.cjs",
+    "prebuild": "npm run prebuild --workspaces --if-present",
     "pretest": "npm run prebuild --workspaces --if-present",
     "start": "npm start --workspaces --if-present",
     "test": "npm test --workspaces --if-present"
@@ -18,14 +17,31 @@
   ],
   "dependencies": {
     "@dfinity/agent": "^2.4.1",
-    "@dfinity/auth-client": "^2.4.1",
-    "aos": "^2.3.4",
-    "buffer": "^6.0.3",
-    "process": "^0.11.10",
-    "react-router-dom": "^7.5.1",
-    "stream-browserify": "^3.0.0"
+    "@dfinity/identity": "^2.4.1",
+    "@dfinity/principal": "^2.4.1",
+    "@react-three/fiber": "^9.1.2",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.1",
+    "file-upload": "^0.0.0",
+    "fileupload": "^1.0.0",
+    "helmet": "^8.1.0",
+    "ipfs-http-client": "^60.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pinata": "^2.2.1",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.0",
+    "react-toastify": "^11.0.5",
+    "sass": "^1.86.3",
+    "three": "^0.175.0",
+    "web3.storage": "^4.5.5"
   },
   "devDependencies": {
-    "dotenv": "^16.5.0"
+    "nodemon": "^3.1.10"
   }
 }
